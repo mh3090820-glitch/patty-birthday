@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رسالة حب ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hearts"></div>
+
+<section id="lockScreen" class="screen active">
+  <div class="card">
+    <h1>🔐 افتح الرسالة</h1>
+    <p>اكتب كلمة السر</p>
+    <input id="passwordInput" type="password" placeholder="كلمة السر">
+    <button onclick="checkPassword()">فتح</button>
+    <p id="error" class="error"></p>
+  </div>
+</section>
+
+<section id="mainScreen" class="screen">
+  <div class="envelope" onclick="openEnvelope()">
+    <div class="flap"></div>
+    <div class="letter">💌</div>
+  </div>
+
+  <div id="content" class="hidden">
+    <h1 id="title"></h1>
+    <p id="message"></p>
+
+    <div class="counter"
+    id="counter">
+    </div>
+
+    <div id="gallery" class="gallery"></div>
+    <div id="loveSection" style="display:none; text-align:center; margin:50px 0;">
+
+    <button id="kissBtn">
+        💖 بموت فيكي يا بوب قلبي 💖
+    </button>
+
+</div>
+
+<div id="kissOverlay">
+
+    <div class="kiss">
+
+        💋
+
+    </div>
+
+</div>
+
+    <audio id="bgMusic" controls></audio>
+
+    <div class="actions">
+      <button onclick="toggleMusic()">🎵 تشغيل / إيقاف</button>
+      <button onclick="sharePage()">📤 مشاركة</button>
+    </div>
+  </div>
+</section>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
